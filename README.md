@@ -1,2 +1,2 @@
 # Smart-Finance-Expense-Tracker
-A Python-based expense tracker to manage daily expenses, monitor budgets, and gain spending insights.
+A personal finance management application built with Python and Streamlit to track expenses, manage budgets, visualize spending, and monitor savings through an interactive dashboard.
