@@ -33,6 +33,8 @@ st.sidebar.markdown("<p style='font-size:20px;'>💵 Budget Tracker</p>", unsafe
 st.sidebar.markdown("<p style='font-size:20px;'>🎯 Savings Tracker</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='font-size:20px;'>📈 Charts</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='font-size:20px;'>💡 Smart Insights</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='font-size:20px;'>⚙️ Settings</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='font-size:20px;'>📄 Monthly Report</p>", unsafe_allow_html=True)
 
 st.sidebar.divider()
 
