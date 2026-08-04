@@ -20,6 +20,8 @@ This project is currently under development and is being built step by step.
 - 📊 Analytics Dashboard
 - 📈 Charts
 - 🧠 Smart Insights
+- ⚙️ Settings
+- 📄 Monthly Report
 
 ## 🛠️ Technologies
 
