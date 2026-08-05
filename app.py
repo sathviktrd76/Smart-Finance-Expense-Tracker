@@ -8,6 +8,16 @@
 # ----------------------------------------------------------
 import streamlit as st
 
+#-----------------------------------------------------------
+# Import csv 
+#-----------------------------------------------------------
+import csv  # comma seperated values. It is a simple text file used to store data in a table format.
+
+#-----------------------------------------------------------
+#Import os #os stands for operating system
+#-----------------------------------------------------------
+import os #lets python interact with your operating system
+
 # ----------------------------------------------------------
 # Configure the webpage
 # ----------------------------------------------------------
@@ -16,6 +26,26 @@ st.set_page_config(
     page_icon="💰",
     layout="wide"
 )
+
+# ==========================================================
+# CREATE CSV FILE IF IT DOESN'T EXIST
+# ==========================================================
+
+if not os.path.isfile("expenses.csv"): #path is location of file
+
+    with open("expenses.csv", "w", newline="") as file: #open the file expenses.csv in write mode and call it file
+
+        writer = csv.writer(file)
+
+        writer.writerow([
+            "Date",
+            "Category",
+            "Amount",
+            "Description"
+        ]) #csv becomes Date,Category,Amount,Description
+
+
+
 
 # ==========================================================
 # SIDEBAR
@@ -33,9 +63,9 @@ st.sidebar.markdown("<p style='font-size:20px;'>💵 Budget Tracker</p>", unsafe
 st.sidebar.markdown("<p style='font-size:20px;'>🎯 Savings Tracker</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='font-size:20px;'>📈 Charts</p>", unsafe_allow_html=True)
 st.sidebar.markdown("<p style='font-size:20px;'>💡 Smart Insights</p>", unsafe_allow_html=True)
-st.sidebar.markdown("<p style='font-size:20px;'>⚙️ Settings</p>", unsafe_allow_html=True)
-st.sidebar.markdown("<p style='font-size:20px;'>📄 Monthly Report</p>", unsafe_allow_html=True)
 
+st.sidebar.markdown("<p style='font-size:20px;'>📄 Monthly Report</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style='font-size:20px;'>⚙️ Settings</p>", unsafe_allow_html=True)
 st.sidebar.divider()
 
 st.sidebar.success("Welcome to Smart Finance Tracker!")
@@ -161,6 +191,63 @@ st.divider()
 # ==========================================================
 # FOOTER
 # ==========================================================
+
+
+st.markdown(
+    """
+    <h2 style="
+        text-align:center;
+        font-size:40px;
+        color:#1E3A8A;
+    ">
+        ➕ Add New Expense
+    </h2>
+    """,
+    unsafe_allow_html=True
+)
+
+expense_date=st.date_input("📅 Date") #select a date
+
+expense_category = st.selectbox( #choose one option from a list
+    "📂 Category",
+    [
+        "Food",
+        "Travel",
+        "Shopping",
+        "Entertainment",
+        "Education",
+        "Health",
+        "Bills",
+        "Other",
+    ]
+)
+
+expense_amount=st.number_input(  #enter numeric values only
+    "💰 Amount (₹)",
+    min_value=0.0,
+    step=1.0
+)
+
+expense_description = st.text_area( #creates multi-line text box
+    "📝 Description",
+    placeholder="Enter a short description of the expense..." #placeholder is a hint shown before the user starts typing
+)
+
+if st.button("➕ Add Expense"): #creates a clickable button, if statement asks if the button has been clicked. If YES execute the code. If NO skip it
+    with open("expenses.csv","a",newline="") as file: #append mean add at the end
+        writer=csv.writer(file)
+        writer.writerow([
+            expense_date,
+            expense_category,
+            expense_amount,
+            expense_description
+        ])
+    st.success("✅ Expense added successfully!") #displays a green success message
+
+#----------------------------------------------------------------------
+# Append "a" adds new data at the end without deleting existing data
+# Write "w" creates a new file or overwrite an existing one
+#-----------------------------------------------------------------------
 
 st.markdown(
     """
