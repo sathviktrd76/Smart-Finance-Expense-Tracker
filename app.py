@@ -192,7 +192,9 @@ st.divider()
 # FOOTER
 # ==========================================================
 
-
+#------------------------------------------------------------
+# ADD NEW EXPENSE
+#------------------------------------------------------------
 st.markdown(
     """
     <h2 style="
@@ -206,10 +208,46 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-expense_date=st.date_input("📅 Date") #select a date
+#---------------------------------------------------------------
+# DATE
+#---------------------------------------------------------------
+st.markdown(
+    """
+    <p style="
+        font-size:22px;
+        font-weight:bold;
+        color:#1E3A8A;
+    ">
+        📅 Select Date
+    </p>
+    """,
+    unsafe_allow_html=True
+)
 
-expense_category = st.selectbox( #choose one option from a list
-    "📂 Category",
+expense_date = st.date_input(
+    "",
+    label_visibility="collapsed"
+)
+
+#------------------------------------------------------------------
+# CATEGORY
+#------------------------------------------------------------------
+
+st.markdown(
+    """
+    <p style="
+        font-size:22px;
+        font-weight:bold;
+        color:#1E3A8A;
+    ">
+        📂 Select Category
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+expense_category = st.selectbox(
+    "",
     [
         "Food",
         "Travel",
@@ -218,31 +256,77 @@ expense_category = st.selectbox( #choose one option from a list
         "Education",
         "Health",
         "Bills",
-        "Other",
-    ]
+        "Other"
+    ],
+    label_visibility="collapsed"
 )
 
-expense_amount=st.number_input(  #enter numeric values only
-    "💰 Amount (₹)",
+#-------------------------------------------------------------------
+# AMOUNT
+#-------------------------------------------------------------------
+st.markdown(
+    """
+    <p style="
+        font-size:22px;
+        font-weight:bold;
+        color:#1E3A8A;
+    ">
+        💰 Enter Amount
+    </p>
+    """,
+    unsafe_allow_html=True
+)
+
+expense_amount = st.number_input(
+    "",
     min_value=0.0,
-    step=1.0
+    step=1.0,
+    label_visibility="collapsed"
 )
 
-expense_description = st.text_area( #creates multi-line text box
-    "📝 Description",
-    placeholder="Enter a short description of the expense..." #placeholder is a hint shown before the user starts typing
+#---------------------------------------------------------------------------
+# DESCRIPTION
+#---------------------------------------------------------------------------
+
+st.markdown(
+    """
+    <p style="
+        font-size:22px;
+        font-weight:bold;
+        color:#1E3A8A;
+    ">
+        📝 Expense Description
+    </p>
+    """,
+    unsafe_allow_html=True
 )
 
-if st.button("➕ Add Expense"): #creates a clickable button, if statement asks if the button has been clicked. If YES execute the code. If NO skip it
-    with open("expenses.csv","a",newline="") as file: #append mean add at the end
-        writer=csv.writer(file)
+expense_description = st.text_area(
+    "",
+    placeholder="Enter a short description of the expense...",
+    label_visibility="collapsed"
+)
+
+st.divider()
+
+#----------------------------------------------------------------------------
+# BUTTON
+#----------------------------------------------------------------------------
+
+if st.button("➕ Add Expense"):
+
+    with open("expenses.csv", "a", newline="") as file:
+
+        writer = csv.writer(file)
+
         writer.writerow([
             expense_date,
             expense_category,
             expense_amount,
             expense_description
         ])
-    st.success("✅ Expense added successfully!") #displays a green success message
+
+    st.success("✅ Expense Added Successfully!")
 
 #----------------------------------------------------------------------
 # Append "a" adds new data at the end without deleting existing data
