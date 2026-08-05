@@ -183,6 +183,6 @@ Through this project, I am learning:
 
 ### **Sathvik Talabathula**
 
-Made with using **Python** & **Streamlit**
+Made with 💖 using **Python** & **Streamlit**
 
 </div>
