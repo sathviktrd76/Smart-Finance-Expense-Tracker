@@ -17,6 +17,12 @@ import csv  # comma seperated values. It is a simple text file used to store dat
 #Import os #os stands for operating system
 #-----------------------------------------------------------
 import os #lets python interact with your operating system
+#-----------------------------------------------------------
+
+#-----------------------------------------------------------
+# Import pandas
+#-----------------------------------------------------------
+import pandas as pd
 
 # ----------------------------------------------------------
 # Configure the webpage
@@ -188,9 +194,6 @@ for feature in features:
 
 st.divider()
 
-# ==========================================================
-# FOOTER
-# ==========================================================
 
 #------------------------------------------------------------
 # ADD NEW EXPENSE
@@ -332,6 +335,33 @@ if st.button("➕ Add Expense"):
 # Append "a" adds new data at the end without deleting existing data
 # Write "w" creates a new file or overwrite an existing one
 #-----------------------------------------------------------------------
+
+
+# ==========================================================
+# VIEW EXPENSES
+# ==========================================================
+st.divider()
+st.subheader("📋 View Expenses")
+
+# ==========================================================
+# READ CSV FILE
+# ==========================================================
+expenses = pd.read_csv("expenses.csv")
+
+# ----------------------------------------------------------
+# Display Expenses
+# ----------------------------------------------------------
+
+st.dataframe(
+    expenses,
+    use_container_width=True,
+    hide_index=True
+)
+
+
+# ==========================================================
+# FOOTER
+# ==========================================================
 
 st.markdown(
     """
