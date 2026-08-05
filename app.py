@@ -331,7 +331,7 @@ if st.button("➕ Add Expense"):
 
     st.success("✅ Expense Added Successfully!")
 
-#----------------------------------------------------------------------
+#-----------------------------------------------------------------------
 # Append "a" adds new data at the end without deleting existing data
 # Write "w" creates a new file or overwrite an existing one
 #-----------------------------------------------------------------------
