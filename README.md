@@ -55,8 +55,8 @@ learn real-world Python application development.
 - 📊 Analytics Dashboard
 - 📈 Charts
 - 🧠 Smart Insights
-- ⚙️ Settings
 - 📄 Monthly Report
+- ⚙️ Settings
 - 📤 Export Data
 
 ---
