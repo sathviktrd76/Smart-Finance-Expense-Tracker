@@ -343,16 +343,85 @@ if st.button("➕ Add Expense"):
 st.divider()
 st.subheader("📋 View Expenses")
 
+
 #============================================================
 # SEARCH EXPENSES
 #============================================================
 
 search=st.text_input("🔍 Search Expenses")
 
+
+#============================================================
+# FILTER BY CATEGORY
+#===========================================================
+selected_category=st.selectbox(
+    "📂 Filter by Category",
+    [
+        "All Categories",
+        "Food",
+        "Travel",
+        "Shopping",
+        "Entertainment",
+        "Education",
+        "Health",
+        "Bills",
+        "Other"
+    ]
+)
+
+#=========================================================
+# FILTER BY MINIMUM AMOUNT
+#=========================================================
+minimum_amount=st.number_input(
+    "💰 Minimum Amount",
+    min_value=0.0,
+    value=0.0,
+    step=100.0,
+    key="filter_amount" #unique key
+)
+
 # ==========================================================
 # READ CSV FILE
 # ==========================================================
 expenses = pd.read_csv("expenses.csv")
+
+#==========================================================
+# FILTER EXPENSES BY CATEGORY
+#==========================================================
+
+if selected_category!="All Categories":
+    expenses=expenses[
+        expenses["Category"]==selected_category
+    ]
+
+
+#=========================================================
+# FILTER BY MINIMUM AMOUNT
+#=========================================================
+
+expenses=expenses[
+    expenses["Amount"]>=minimum_amount
+]
+
+# ==========================================================
+# FILTER BY MAXIMUM AMOUNT
+# ==========================================================
+
+maximum_amount = st.number_input(
+    "💵 Maximum Amount",
+    min_value=0.0,
+    value=100000.0,
+    step=100.0,
+    key="filter_max_amount"
+)
+
+expenes=expenses[
+    expenses["Amount"]<=maximum_amount
+]
+# ==========================================================
+# SEARCH EXPENSES
+# ==========================================================
+
 if search:
 
     expenses = expenses[
