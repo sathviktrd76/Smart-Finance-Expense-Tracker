@@ -17,8 +17,8 @@ A beginner-friendly personal finance management application built while learning
 
 <p align="center">
 Smart Finance Expense Tracker helps users manage their daily finances by
-tracking expenses, monitoring spending habits, and organizing financial data
-through an interactive dashboard.
+tracking expenses, searching records, filtering transactions, and organizing
+financial data through an interactive dashboard.
 </p>
 
 <p align="center">
@@ -32,38 +32,43 @@ learn real-world Python application development.
 
 <h3>✅ Completed</h3>
 
-* 🏠 Home Page UI
-* 📋 Sidebar Navigation
-* ➕ Add New Expense
-* 📅 Date Selection
-* 📂 Expense Category Selection
-* 💰 Amount Input
-* 📝 Expense Description
-* 💾 Save Expenses to CSV
-* 📄 Automatic CSV File Creation
-* ✅ Success Message After Saving
-* 📋 View All Expenses
-* 📊 Display Expenses in Table Format
-* 🐼 Integrated Pandas for Data Handling
-* 📄 Read Expense Data from CSV
-* 🔍 Search Expenses
-* 🔎 Search by Category
-* 📝 Search by Description
-* 🔤 Case-Insensitive Search
+- 🏠 Home Page UI
+- 📋 Sidebar Navigation
+- ➕ Add New Expense
+- 📅 Date Selection
+- 📂 Expense Category Selection
+- 💰 Amount Input
+- 📝 Expense Description
+- 💾 Save Expenses to CSV
+- 📄 Automatic CSV File Creation
+- ✅ Success Message After Saving
+- 📋 View All Expenses
+- 📊 Display Expenses in Interactive Table
+- 🐼 Integrated Pandas for Data Handling
+- 📄 Read Expense Data from CSV
+- 🔍 Search Expenses
+- 🔎 Search by Category
+- 📝 Search by Description
+- 🔤 Case-Insensitive Search
+- 📂 Filter by Category
+- 💰 Filter by Minimum Amount
+- 💵 Filter by Maximum Amount
+- 🔄 Multiple Filters Applied Together
 
 <h3>🚧 Coming Soon</h3>
 
-* 📂 Filter Expenses
-* ✏️ Edit Expenses
-* 🗑️ Delete Expenses
-* 💵 Budget Tracker
-* 🎯 Savings Tracker
-* 📊 Analytics Dashboard
-* 📈 Charts
-* 🧠 Smart Insights
-* 📄 Monthly Report
-* ⚙️ Settings
-* 📤 Export Data
+- 📅 Filter by Date
+- ↕️ Sort Expenses
+- ✏️ Edit Expenses
+- 🗑️ Delete Expenses
+- 💵 Budget Tracker
+- 🎯 Savings Tracker
+- 📊 Analytics Dashboard
+- 📈 Charts
+- 🧠 Smart Insights
+- 📄 Monthly Report
+- ⚙️ Settings
+- 📤 Export Data
 
 ---
 
@@ -88,44 +93,55 @@ learn real-world Python application development.
 
 ### ✅ Day 1 Completed
 
-* Designed the Home Page UI
-* Created Sidebar Navigation
-* Built the Initial Streamlit Application
+- Designed the Home Page UI
+- Created Sidebar Navigation
+- Built the Initial Streamlit Application
 
 ---
 
 ### ✅ Day 2 Completed
 
-* Built the Add Expense Module
-* Added Date Picker
-* Added Category Dropdown
-* Added Amount Input
-* Added Description Input
-* Implemented CSV File Handling
-* Automatically Created `expenses.csv`
-* Stored Every Expense as a New Row
-* Displayed Success Message After Saving
+- Built the Add Expense Module
+- Added Date Picker
+- Added Category Dropdown
+- Added Amount Input
+- Added Description Input
+- Implemented CSV File Handling
+- Automatically Created `expenses.csv`
+- Stored Every Expense as a New Row
+- Displayed Success Message After Saving
 
 ---
 
 ### ✅ Day 3 Completed
 
-* Implemented View Expenses Module
-* Integrated Pandas for Data Handling
-* Read Expense Records from CSV File
-* Converted CSV Data into Pandas DataFrame
-* Displayed Expenses in an Interactive Table
+- Implemented View Expenses Module
+- Integrated Pandas for Data Handling
+- Read Expense Records from CSV File
+- Converted CSV Data into Pandas DataFrame
+- Displayed Expenses in an Interactive Table
 
 ---
 
 ### ✅ Day 4 Completed
 
-* Implemented Search Expenses Module
-* Added Search Text Box
-* Search by Expense Category
-* Search by Expense Description
-* Implemented Case-Insensitive Search
-* Applied DataFrame Filtering Using Pandas
+- Implemented Search Expenses Module
+- Added Search Text Box
+- Search by Expense Category
+- Search by Expense Description
+- Implemented Case-Insensitive Search
+- Applied DataFrame Filtering Using Pandas
+
+---
+
+### ✅ Day 5 Completed
+
+- Added Category Filter
+- Added Minimum Amount Filter
+- Added Maximum Amount Filter
+- Applied Multiple Filters Together
+- Learned Boolean Masking in Pandas
+- Improved Expense Filtering System
 
 ---
 
@@ -133,7 +149,7 @@ learn real-world Python application development.
 
 ## 🚀 Current Version
 
-# **v1.3**
+# **v1.4**
 
 </div>
 
@@ -173,16 +189,17 @@ Screenshots will be added as new features are developed.
 
 <h2 align="center">🎯 Future Improvements</h2>
 
-* 📂 Filter Expenses by Category, Date & Amount
-* ✏️ Edit and Update Expenses
-* 🗑️ Delete Expenses
-* 📊 Interactive Charts
-* 🤖 Smart Spending Insights
-* 📄 Monthly Financial Reports
-* 💰 Budget Analysis
-* 🎯 Savings Goals
-* 📤 Export Data to CSV/PDF
-* 🎨 Improved User Interface
+- 📅 Date Filtering
+- ↕️ Sort Expenses by Date & Amount
+- ✏️ Edit and Update Expenses
+- 🗑️ Delete Expenses
+- 📊 Interactive Charts
+- 🤖 Smart Spending Insights
+- 📄 Monthly Financial Reports
+- 💰 Budget Analysis
+- 🎯 Savings Goals
+- 📤 Export Data to CSV/PDF
+- 🎨 Improved User Interface
 
 ---
 
@@ -190,14 +207,15 @@ Screenshots will be added as new features are developed.
 
 Through this project, I am learning:
 
-* Python Application Development
-* Streamlit Framework
-* CSV File Handling
-* Pandas Data Processing
-* DataFrame Filtering
-* Search Functionality using Pandas
-* Building Real-World Applications
-* Git & GitHub Workflow
+- Python Application Development
+- Streamlit Framework
+- CSV File Handling
+- Pandas Data Processing
+- DataFrame Filtering
+- Search Functionality using Pandas
+- Multi-Level Data Filtering
+- Building Real-World Applications
+- Git & GitHub Workflow
 
 ---
 
