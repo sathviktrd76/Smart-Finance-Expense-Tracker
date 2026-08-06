@@ -343,10 +343,24 @@ if st.button("➕ Add Expense"):
 st.divider()
 st.subheader("📋 View Expenses")
 
+#============================================================
+# SEARCH EXPENSES
+#============================================================
+
+search=st.text_input("🔍 Search Expenses")
+
 # ==========================================================
 # READ CSV FILE
 # ==========================================================
 expenses = pd.read_csv("expenses.csv")
+if search:
+
+    expenses = expenses[
+        expenses["Category"].str.contains(search, case=False) |
+        expenses["Description"].str.contains(search, case=False)
+    ]
+
+
 
 # ----------------------------------------------------------
 # Display Expenses
