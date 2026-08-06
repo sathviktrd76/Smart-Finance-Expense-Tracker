@@ -46,13 +46,16 @@ learn real-world Python application development.
 * 📊 Display Expenses in Table Format
 * 🐼 Integrated Pandas for Data Handling
 * 📄 Read Expense Data from CSV
+* 🔍 Search Expenses
+* 🔎 Search by Category
+* 📝 Search by Description
+* 🔤 Case-Insensitive Search
 
 <h3>🚧 Coming Soon</h3>
 
+* 📂 Filter Expenses
 * ✏️ Edit Expenses
 * 🗑️ Delete Expenses
-* 🔍 Search Expenses
-* 📂 Filter Expenses
 * 💵 Budget Tracker
 * 🎯 Savings Tracker
 * 📊 Analytics Dashboard
@@ -68,13 +71,13 @@ learn real-world Python application development.
 
 <div align="center">
 
-| Technology | Status         |
-| ---------- | -------------- |
-| Python     | ✅              |
-| Streamlit  | ✅              |
-| CSV        | ✅              |
-| OS Module  | ✅              |
-| Pandas     | ✅              |
+| Technology | Status |
+|------------|--------|
+| Python | ✅ |
+| Streamlit | ✅ |
+| CSV | ✅ |
+| OS Module | ✅ |
+| Pandas | ✅ |
 | Matplotlib | 🚧 Coming Soon |
 
 </div>
@@ -87,7 +90,7 @@ learn real-world Python application development.
 
 * Designed the Home Page UI
 * Created Sidebar Navigation
-* Built the initial Streamlit application
+* Built the Initial Streamlit Application
 
 ---
 
@@ -108,10 +111,21 @@ learn real-world Python application development.
 ### ✅ Day 3 Completed
 
 * Implemented View Expenses Module
-* Integrated Pandas for data handling
-* Read expense records from CSV file
-* Converted CSV data into Pandas DataFrame
-* Displayed expenses in an interactive table
+* Integrated Pandas for Data Handling
+* Read Expense Records from CSV File
+* Converted CSV Data into Pandas DataFrame
+* Displayed Expenses in an Interactive Table
+
+---
+
+### ✅ Day 4 Completed
+
+* Implemented Search Expenses Module
+* Added Search Text Box
+* Search by Expense Category
+* Search by Expense Description
+* Implemented Case-Insensitive Search
+* Applied DataFrame Filtering Using Pandas
 
 ---
 
@@ -119,7 +133,7 @@ learn real-world Python application development.
 
 ## 🚀 Current Version
 
-# **v1.2**
+# **v1.3**
 
 </div>
 
@@ -149,11 +163,19 @@ streamlit run app.py
 
 ---
 
+<h2 align="center">📸 Project Preview</h2>
+
+<p align="center">
+Screenshots will be added as new features are developed.
+</p>
+
+---
+
 <h2 align="center">🎯 Future Improvements</h2>
 
+* 📂 Filter Expenses by Category, Date & Amount
 * ✏️ Edit and Update Expenses
 * 🗑️ Delete Expenses
-* 🔍 Search and Filter Expenses
 * 📊 Interactive Charts
 * 🤖 Smart Spending Insights
 * 📄 Monthly Financial Reports
@@ -172,6 +194,8 @@ Through this project, I am learning:
 * Streamlit Framework
 * CSV File Handling
 * Pandas Data Processing
+* DataFrame Filtering
+* Search Functionality using Pandas
 * Building Real-World Applications
 * Git & GitHub Workflow
 
@@ -183,6 +207,6 @@ Through this project, I am learning:
 
 ### **Sathvik Talabathula**
 
-Made with 💖 using **Python** & **Streamlit**
+Made with 💖 using **Python**, **Streamlit** & **Pandas**
 
 </div>
