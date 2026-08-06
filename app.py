@@ -384,7 +384,7 @@ st.markdown(
         font-size:18px;
         color:gray;
     ">
-        Developed by <b>Sathvik</b> using Python and Streamlit
+        Developed by <b>Sathvik</b> using Python, Streamlit & Pandas
     </p>
     """,
     unsafe_allow_html=True
