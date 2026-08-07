@@ -136,6 +136,7 @@ workflow** to build a real-world application.
 | 📊 **Matplotlib** | Data visualization | 🚧 Coming Soon |
 
 ---
+</div>
 
 <div align="center">
 
