@@ -124,7 +124,7 @@ workflow** to build a real-world application.
 
 ## 🛠️ Technologies Used
 
-</div>
+</div align="center">
 
 | Technology | Purpose | Status |
 |:---:|:---|:---:|
