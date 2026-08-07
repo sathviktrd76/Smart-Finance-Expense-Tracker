@@ -6,9 +6,13 @@
 
 **Built with Python • Streamlit • Pandas • CSV**
 
-<p>
-  <strong>🚧 Currently Under Active Development — v1.5</strong>
-</p>
+🚧 **Currently Under Active Development**
+
+[Features](#-features) •
+[Tech Stack](#️-technologies-used) •
+[Development](#-development-progress) •
+[Installation](#️-installation--usage) •
+[Roadmap](#-roadmap)
 
 </div>
 
@@ -16,38 +20,38 @@
 
 ## 📌 About the Project
 
-**Smart Finance Expense Tracker** is an interactive personal finance management application designed to make everyday expense tracking simple, organized, and insightful.
+**Smart Finance Expense Tracker** is an interactive personal finance management application designed to help users record, organize, search, filter, and sort their daily expenses through a clean and user-friendly interface.
 
-The application allows users to **record, search, filter, sort, and analyze their expenses** through a clean and user-friendly interface.
+The application is built using **Python, Streamlit, Pandas, and CSV file handling**, combining programming fundamentals with practical data-processing and user-interface concepts.
 
-The project is being developed using **Python, Streamlit, Pandas, and CSV file handling**, with each development stage focusing on implementing practical software development concepts.
+The project is being developed incrementally, with new functionality being added at each development stage.
 
-Rather than being just a basic expense calculator, the long-term goal of this project is to evolve it into a **complete personal finance management system** with budgeting, savings tracking, analytics, visualizations, financial reports, and intelligent spending insights.
-
-> 🚧 **Development Status:**  
-> This project is currently under active development. New modules and improvements are being added progressively.
+> 🚧 **Project Status:** Under Active Development  
+> The current version is **v1.5**, with the core expense tracking, searching, filtering, sorting, and UI functionality implemented. Additional finance management features are planned for upcoming versions.
 
 ---
 
 ## 🎯 Project Goal
 
-The primary goal of Smart Finance Expense Tracker is to build a practical application while developing real-world skills in:
+The goal of this project is to develop a practical personal finance application while gaining hands-on experience with real-world software development.
 
-- Python programming
-- Data processing
-- File handling
-- User interface development
-- Data filtering and sorting
-- Application logic
-- Problem solving
-- Software project organization
-- Git & GitHub workflow
+The project focuses on:
 
-The project is being developed incrementally, allowing each feature to build upon the previous stage.
+- Building applications using Python
+- Working with structured data
+- Processing data using Pandas
+- Creating interactive interfaces with Streamlit
+- Implementing search, filtering, and sorting logic
+- Managing application state
+- Designing a clean and usable interface
+- Practicing Git and GitHub workflows
+- Developing and documenting a project incrementally
+
+The long-term vision is to transform the application into a **complete personal finance management system** with budgeting, savings tracking, analytics, reports, visualizations, and intelligent spending insights.
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
 ## 🏠 Expense Management
 
@@ -59,15 +63,13 @@ The project is being developed incrementally, allowing each feature to build upo
 - 💰 Enter Expense Amount
 - 📝 Add Expense Description
 - 💾 Save Expenses to CSV
-- 📄 Automatic CSV File Creation
+- 📄 Automatically Create `expenses.csv`
 - 📋 View Stored Expenses
-- 📊 Interactive Expense Table
+- 📊 Display Expenses in an Interactive Table
 
 ---
 
-## 🔍 Search & Discovery
-
-The application provides flexible ways to find previously recorded expenses.
+## 🔍 Search Features
 
 - 🔍 Search Expenses
 - 🔎 Search by Category
@@ -79,15 +81,13 @@ The application provides flexible ways to find previously recorded expenses.
 
 ## ⚙️ Filtering & Sorting
 
-Users can combine multiple filters to quickly identify specific transactions.
-
 - 📂 Filter by Category
 - 💰 Filter by Minimum Amount
 - 💵 Filter by Maximum Amount
 - 📅 Filter by Start Date
 - 📅 Filter by End Date
 - 🔄 Apply Multiple Filters Together
-- ↕️ Sort Expenses
+- ↕️ Sort Expenses by Amount
 - ⬆️ Amount: Low → High
 - ⬇️ Amount: High → Low
 - ⏪ Date: Oldest → Newest
@@ -98,7 +98,7 @@ Users can combine multiple filters to quickly identify specific transactions.
 
 ## 📊 Expense Summary
 
-The application dynamically provides useful information based on the selected filters.
+The application dynamically updates expense information based on the selected filters.
 
 - 📋 Number of Filtered Expenses
 - 💰 Total Filtered Spending
@@ -110,44 +110,44 @@ The application dynamically provides useful information based on the selected fi
 
 ## 🎨 User Interface
 
-The application includes custom styling to improve usability and readability.
-
 - 🎨 Custom CSS Styling
 - 🧭 Organized Sidebar Navigation
 - 🔠 Improved Navigation Typography
 - ↔️ Improved Navigation Spacing
 - 📏 Larger Input Fields
-- 🔘 Improved Button Design
-- 📊 Improved Data Table Readability
+- 🔘 Improved Button Sizes
+- 📊 Improved Expense Table Readability
 - 💱 Indian Currency Display
 - 🖥️ Wide Application Layout
-- ✨ Clean and Consistent UI
+- ✨ Clean and Consistent User Interface
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 | Technology | Purpose | Status |
 |------------|---------|--------|
-| 🐍 **Python** | Application logic | ✅ |
+| 🐍 **Python** | Application logic and development | ✅ |
 | 🎈 **Streamlit** | Interactive web interface | ✅ |
-| 🐼 **Pandas** | Data processing & filtering | ✅ |
+| 🐼 **Pandas** | Data processing and filtering | ✅ |
 | 📄 **CSV** | Expense data storage | ✅ |
-| ⚙️ **OS Module** | File handling | ✅ |
+| ⚙️ **OS Module** | File handling and file existence checks | ✅ |
 | 📊 **Matplotlib** | Data visualization | 🚧 Planned |
 
 ---
 
-# 📅 Development Journey
+# 📅 Development Progress
 
-The project is being developed incrementally.
+The project is being developed step by step, with each stage introducing new functionality and concepts.
+
+---
 
 ## ✅ Day 1 — Project Foundation
 
-- Designed the Home Page
+- Designed the Home Page UI
 - Created Sidebar Navigation
-- Built the initial Streamlit application
-- Configured the application layout
+- Built the Initial Streamlit Application
+- Configured the Application Layout
 
 ---
 
@@ -155,20 +155,20 @@ The project is being developed incrementally.
 
 - Built the Add Expense Module
 - Added Date Picker
-- Added Category Selection
+- Added Category Dropdown
 - Added Amount Input
 - Added Description Input
 - Implemented CSV File Handling
 - Automatically Created `expenses.csv`
-- Stored Expenses as New Rows
-- Added Success Message
+- Stored Every Expense as a New Row
+- Added Success Message After Saving
 
 ---
 
 ## ✅ Day 3 — Data Management
 
-- Implemented View Expenses
-- Integrated Pandas
+- Implemented View Expenses Module
+- Integrated Pandas for Data Handling
 - Read Expense Records from CSV
 - Converted CSV Data into a Pandas DataFrame
 - Displayed Expenses in an Interactive Table
@@ -176,12 +176,12 @@ The project is being developed incrementally.
 
 ---
 
-## ✅ Day 4 — Search System
+## ✅ Day 4 — Search Functionality
 
-- Implemented Expense Search
+- Implemented Search Expenses Module
 - Added Search Text Box
-- Added Category Search
-- Added Description Search
+- Added Search by Expense Category
+- Added Search by Expense Description
 - Implemented Case-Insensitive Search
 - Used Pandas String Filtering
 - Applied DataFrame Filtering
@@ -214,7 +214,7 @@ The project is being developed incrementally.
 - Added Newest-to-Oldest Date Sorting
 - Added Reset Filters Functionality
 - Implemented Streamlit Session State
-- Created Reusable `reset_filters()` Function
+- Created a Reusable `reset_filters()` Function
 - Added Filtered Expense Summary
 - Added Filtered Total Spending
 - Added Filtered Average Expense
@@ -241,31 +241,80 @@ The project is being developed incrementally.
 
 ---
 
-# 🗺️ Development Roadmap
+# 📊 Current Project Status
 
-The project will continue to evolve into a more complete personal finance platform.
+| Component | Status |
+|-----------|--------|
+| 🏠 Home Dashboard | ✅ Completed |
+| ➕ Expense Entry | ✅ Completed |
+| 💾 CSV Data Storage | ✅ Completed |
+| 🐼 Pandas Integration | ✅ Completed |
+| 🔍 Expense Search | ✅ Completed |
+| 📂 Category Filtering | ✅ Completed |
+| 💰 Amount Filtering | ✅ Completed |
+| 📅 Date Filtering | ✅ Completed |
+| ↕️ Expense Sorting | ✅ Completed |
+| 🔄 Filter Reset | ✅ Completed |
+| 📊 Expense Summary | ✅ Completed |
+| 🎨 UI Customization | ✅ Completed |
+| ✏️ Edit Expenses | 🚧 Planned |
+| 🗑️ Delete Expenses | 🚧 Planned |
+| 💵 Budget Tracker | 🚧 Planned |
+| 🎯 Savings Tracker | 🚧 Planned |
+| 📊 Analytics Dashboard | 🚧 Planned |
+| 📈 Interactive Charts | 🚧 Planned |
+| 🧠 Smart Insights | 🚧 Planned |
+| 📄 Monthly Reports | 🚧 Planned |
+| 📤 Data Export | 🚧 Planned |
 
-### 🔜 Next Development Stages
+---
 
-- ✏️ Edit Expenses
+# 🗺️ Roadmap
+
+The following features are planned for upcoming development stages:
+
+### 🔜 Expense Management
+
+- ✏️ Edit and Update Expenses
 - 🗑️ Delete Expenses
+
+### 💰 Financial Management
+
 - 💵 Budget Tracker
 - 🎯 Savings Tracker
+- 💰 Budget Analysis
+
+### 📊 Analytics & Visualization
+
 - 📊 Analytics Dashboard
 - 📈 Interactive Charts
+- 📉 Spending Trends
+- 📂 Category-Based Analysis
+
+### 🧠 Smart Features
+
 - 🧠 Smart Spending Insights
-- 📄 Monthly Reports
-- ⚙️ Settings
-- 📤 Data Export
+- 🔎 Spending Pattern Detection
+- 💡 Personalized Financial Suggestions
+
+### 📄 Reports & Export
+
+- 📄 Monthly Financial Reports
+- 📤 Export Data
 - 📑 PDF Reports
+
+### ⚙️ Application Improvements
+
+- ⚙️ Settings
+- 🎨 Further UI/UX Improvements
+- 📦 Application Packaging
+- 🖥️ Desktop Executable Version
 
 ---
 
 # 💡 Future Vision
 
-The long-term vision for Smart Finance Expense Tracker is to transform it from a basic expense tracking application into a **complete personal finance assistant**.
-
-Future versions are planned to provide:
+The long-term goal is to evolve Smart Finance Expense Tracker from a basic expense tracking application into a **complete personal finance assistant**.
 
 ```text
 Expense Tracking
@@ -287,7 +336,7 @@ Smart Spending Insights
 Complete Personal Finance Assistant
 ```
 
-The objective is to gradually introduce more advanced programming, data analysis, visualization, and intelligent features as the project develops.
+The project will gradually introduce more advanced programming, data analysis, visualization, and intelligent features as development continues.
 
 ---
 
@@ -319,7 +368,7 @@ Smart-Finance-Expense-Tracker/
 git clone https://github.com/your-username/Smart-Finance-Expense-Tracker.git
 ```
 
-## 2️⃣ Navigate to the Project
+## 2️⃣ Navigate to the Project Directory
 
 ```bash
 cd Smart-Finance-Expense-Tracker
@@ -343,71 +392,94 @@ The application will open in your default web browser.
 
 # 📸 Project Preview
 
-Screenshots and demonstrations will be added as the application continues to evolve.
+Screenshots and application demonstrations will be added as the project continues to develop.
+
+Future versions will include visual demonstrations of:
+
+- 🏠 Dashboard
+- ➕ Expense Entry
+- 🔍 Search & Filtering
+- 📊 Analytics
+- 📈 Charts
+- 💵 Budget Tracking
 
 ---
 
 # 📚 Learning Outcomes
 
-This project has provided practical experience with:
+Through this project, I am developing practical experience in:
 
 - 🐍 Python Application Development
-- 🎈 Streamlit Development
+- 🎈 Streamlit Web Application Development
 - 📄 CSV File Handling
 - 🐼 Pandas Data Processing
 - 📊 DataFrame Operations
 - 🔍 Search Implementation
-- ⚙️ Boolean Filtering
+- ⚙️ Boolean Data Filtering
 - 📅 Date-Based Filtering
 - ↕️ Data Sorting
 - 🧠 Streamlit Session State
-- 🔄 Reusable Functions
+- 🔄 Reusable Python Functions
 - 💱 Currency Formatting
-- 🎨 UI/UX Customization
+- 🎨 Streamlit UI/UX Customization
 - 🗂️ Project Organization
 - 🐞 Debugging & Problem Solving
-- 🌐 Git & GitHub
+- 🌐 Git & GitHub Workflow
 - 📝 Technical Documentation
 
 ---
 
-# 📈 Project Status
+# 🌟 Project Highlights
 
-| Component | Status |
-|-----------|--------|
-| Home Dashboard | ✅ Completed |
-| Expense Entry | ✅ Completed |
-| CSV Storage | ✅ Completed |
-| Pandas Integration | ✅ Completed |
-| Expense Search | ✅ Completed |
-| Category Filtering | ✅ Completed |
-| Amount Filtering | ✅ Completed |
-| Date Filtering | ✅ Completed |
-| Expense Sorting | ✅ Completed |
-| Filter Reset | ✅ Completed |
-| Expense Summary | ✅ Completed |
-| UI Customization | ✅ Completed |
-| Edit Expenses | 🚧 Planned |
-| Delete Expenses | 🚧 Planned |
-| Budget Tracker | 🚧 Planned |
-| Savings Tracker | 🚧 Planned |
-| Analytics | 🚧 Planned |
-| Charts | 🚧 Planned |
-| Smart Insights | 🚧 Planned |
-| Reports | 🚧 Planned |
-| Data Export | 🚧 Planned |
+Smart Finance Expense Tracker demonstrates how fundamental Python concepts can be combined with modern libraries to create a practical real-world application.
+
+### What this project demonstrates:
+
+**Programming**
+
+> Python functions, conditions, file handling, validation and application logic.
+
+**Data Processing**
+
+> Pandas DataFrames, filtering, searching, sorting and date handling.
+
+**Application Development**
+
+> Interactive interfaces, forms, navigation and session state using Streamlit.
+
+**Problem Solving**
+
+> Handling invalid filters, empty datasets, data validation and user input.
+
+**Project Development**
+
+> Incremental development, debugging, documentation and GitHub-based version control.
 
 ---
 
-# 🌟 Why This Project?
+# 🎓 What I Am Learning
 
-Managing personal expenses is something many people do regularly, but simple expense tracking can quickly become difficult when transactions start increasing.
+This project is helping me understand how individual programming concepts come together to form a complete application.
 
-Smart Finance Expense Tracker aims to provide a simple way to:
-
-**Record → Organize → Search → Filter → Understand → Improve**
-
-The project also demonstrates how fundamental Python programming concepts can be combined with modern libraries to create a practical application.
+```text
+Python Fundamentals
+        ↓
+File Handling
+        ↓
+CSV Data Storage
+        ↓
+Pandas
+        ↓
+Data Processing
+        ↓
+Filtering & Sorting
+        ↓
+Streamlit
+        ↓
+Interactive Application
+        ↓
+Real-World Project
+```
 
 ---
 
@@ -425,7 +497,7 @@ Interested in:
 
 <br>
 
-### 💻 Built with
+### 💻 Built With
 
 **Python • Streamlit • Pandas • CSV**
 
