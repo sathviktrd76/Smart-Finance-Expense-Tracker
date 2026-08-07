@@ -504,7 +504,7 @@ professional quality.
 
 # **Sathvik Talabathula**
 
-**B.Tech CSE (AI & ML) Student**
+**B.Tech CSE (AI & ML) Student|CMR UNIVERSITY**
 
 <br>
 
