@@ -508,7 +508,7 @@ professional quality.
 
 <br>
 
-Made with 💖 using
+Made using
 
 ### 🐍 Python • 🎈 Streamlit • 🐼 Pandas • 📄 CSV
 
